@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="SIMBOLO-_4_.ico" type="image/x-icon">
+
+    <title>dúvidas</title>
+
+
+    
+
+
+
+
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+        type="text/css" href=
+"https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  
+
+
+
+
+
+    <script type="text/javascript">
+        function showHideRow(row) {
+            $("#"  + row).toggle();
+           
+            
+        }
+    </script>
+  
+    <style>
+        html,body {
+
+
+            overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+background-color:#421628 ;
+            margin: 0 auto;
+            padding: 0px;
+            text-align: center;
+            
+            font-family: "Myriad Pro", 
+                "Helvetica Neue", Helvetica, 
+                Arial, Sans-Serif;
+        }
+  
+
+
+
+        @font-face {
+    font-family:'GeometosNeueExtraLight.ttf' ;
+    src: url('GeometosNeueExtraLight.ttf') format('truetype');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+
+
+        #wrapper {
+
+           
+            
+            margin: 0 auto;
+
+text-align: center;
+            max-width: 1000px;
+           
+      
+        
+            
+        }
+  
+      
+        #table_detail {
+            width:1000px;
+            text-align: left;
+            border-collapse: collapse;
+            color:#777777;
+            border: #a8a8a8 ;
+            
+           
+            
+        }
+  
+        #table_detail tr:hover {
+            background-color: #F2F2F2;
+        }
+  
+        #table_detail .hidden_row {
+            display: none;
+            
+        }
+
+
+
+
+#wrapper:hover{
+
+
+cursor: pointer;
+}
+
+
+#wrapper .estilo{
+
+font-size: 20px;
+display: flex;
+align-items: center;
+padding-left: 5px;
+color:#CEBEB2;
+}
+
+
+
+
+strong{
+font-size:30px;
+font-weight: normal;
+margin-right: 5px;
+
+}
+
+p{
+margin-left: 15px;
+color:#9b9999;
+padding-top: 10px;
+
+}
+  
+
+
+h6{
+margin-top: 150px;
+color:#CEBEB2;
+font-size:45px;
+}
+
+
+.títulotabela{
+
+    
+   position: absolute;
+   top: 11%;
+   
+ 
+
+ 
+   
+}
+
+
+
+
+
+.header{
+    height: 200px;
+
+padding: 20px 0;
+}
+
+
+
+
+
+
+.social-media{
+
+    position:absolute;
+ 
+top: 40%;
+right: 2.5%;
+
+
+
+}
+
+
+
+.social-media img{
+    display: block;
+ 
+    width: 55px;
+    margin: 30px 0;
+   
+    
+   
+    filter: drop-shadow(12px 9px 6px #33111f);
+box-shadow: 5px 5px 5px 5px #33111f;
+
+    
+
+}
+
+
+
+
+
+
+      
+
+.logo>img{
+
+    width: 32%;
+    margin-left: 10px;
+}
+  
+
+.menu{
+    padding-top: 50px;
+    max-width: 55%;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size:16px;
+    white-space: nowrap;
+    font-family:'GeometosNeueExtraLight.ttf';
+    
+  
+   
+    position: absolute;
+    right:60px;
+    
+    
+   
+
+
+}
+
+.menu a{
+    color: #CEBEB2;
+    text-decoration: none;
+    font-weight:bold;
+    margin-right: 10px;
+    position: relative;
+    
+   
+}
+
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.menu a:after{
+    content: "";
+    position: absolute;
+    background-color: #CEBEB2;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color: white;
+}
+.menu a:hover:after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px){
+
+
+
+
+    #wrapper {
+       width: 95%;
+margin: 0 auto;
+
+text-align: center;
+max-width: 570px;
+margin-top: 60px;
+
+}
+
+
+#table_detail {
+width:570px;
+text-align: left;
+border-collapse: collapse;
+color:#777777;
+border: #a8a8a8 ;
+
+
+
+}
+
+
+.logo-rodapé1{
+ 
+
+ margin-top: 0px;
+left:-20%; 
+position: absolute;
+top: 1%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ 
+ 
+
+  
+}
+
+
+
+
+@media only screen and (max-width:850px){
+
+
+
+    
+    
+    #wrapper .estilo{
+
+font-size: 16px;
+display: flex;
+align-items: center;
+padding-left: 5px;
+color:#CEBEB2;
+}
+
+
+    
+    
+    
+    
+    #wrapper {
+
+margin: 0 auto;
+
+text-align: center;
+max-width: 450px;
+margin-top: 60px;
+
+
+
+}
+
+
+#table_detail {
+width:450px;
+text-align: left;
+border-collapse: collapse;
+color:#777777;
+border: #a8a8a8 ;
+
+
+
+
+}
+
+
+
+h3{display: none;}
+
+
+h4{display: none;}
+
+
+
+    .escritório{
+    position: absolute;
+    top:150%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin-top: 800px;
+   
+    
+    
+    
+
+    
+}
+
+iframe{
+   
+    width: 325px;
+    margin-top: 750px;
+}
+
+
+    .logo-rodapé1{
+ 
+
+ margin-top: 0px;
+left:-20%; 
+position: absolute;
+top: -15%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ opacity: 0%;
+ font-size: 1px;
+ 
+
+  
+}
+
+}
+
+
+
+.gabriela>img{width: 48%; height: 32%; 
+    margin-left: 20%;
+
+  
+
+}
+
+
+
+
+.center{
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+
+.social-media img {
+    display: none;
+ 
+  width: 40px;
+  margin: 30px;
+
+ 
+  
+ 
+  filter: drop-shadow(12px 9px 6px #33111f);
+box-shadow: 5px 5px 5px 5px #33111f;
+
+
+}
+
+.social-media{
+
+position: absolute;
+display: block;
+
+
+top: 35%;
+
+
+}
+
+
+
+.simbolo1 img{  
+    margin-left: -95px;
+    width:70px;
+    height:70px;
+    
+    
+
+
+}
+
+.menu {
+
+   font-size: 12px;
+   position: absolute;
+    right:30px;
+    
+    
+}
+}
+
+
+
+
+
+
+
+h3{
+
+    font-size:28px;
+    color: #CEBEB2;
+ 
+    font-weight: lighter;
+  
+ white-space: nowrap;
+ 
+ letter-spacing: 3px;
+ font-family:'GeometosNeueExtraLight.ttf';
+}
+
+
+h4{
+    font-size:18px;
+    color: #CEBEB2;
+  
+    font-weight: lighter;
+    letter-spacing:10px;
+    
+    font-family:'GeometosNeueExtraLight.ttf';
+}
+
+
+
+h1{
+
+  
+    color: #CEBEB2;
+    font-size: clamp(1.5em , 1.5em + 3vw, 2.5em);
+    font-weight: lighter;
+  
+ white-space: nowrap;
+ opacity: 100%;
+ letter-spacing: 3px;
+ 
+    
+    
+}
+
+h2{
+   
+  
+    color: #CEBEB2;
+    font-size: clamp(1em , 1em + 1vw, .7em);
+    font-weight: lighter;
+    letter-spacing:20px;
+    opacity: 100%;
+
+}
+
+
+
+
+
+strong{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 37px;
+    font-weight:bold;
+    letter-spacing: 5px;
+    text-shadow: none;
+    line-height:45px ;
+}
+
+span{
+
+    font-weight: lighter;
+    font-size: 17px;
+    line-height:30px ;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+.simbolo1{
+
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    max-width: 35%;
+ 
+
+}
+ 
+
+
+
+
+
+
+
+.logo-rodapé1{
+ 
+
+ margin-top: 0px;
+left:140%; 
+position: absolute;
+top: 11%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ opacity: 100%;
+
+
+ 
+
+  
+}
+
+.dentro{
+margin-left:50px;
+
+}
+
+.dentro img{
+
+    display:inline-block;
+    
+   
+    
+}
+
+.dentro h1{
+    display:inline-block;
+    margin-right: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+div#q1:hover{
+
+    transform: scale(1.2);
+transition: all .5s ease;
+transition-duration: 2s;
+    
+
+}
+
+
+div#q2:hover{
+
+
+transform: scale(1.2);
+transition: all .5s ease;
+transition-duration: 2s;
+
+}
+
+div#q3:hover{
+
+
+transform: scale(1.2);
+transition: all .5s ease;
+transition-duration: 2s;
+
+}
+
+.escritório{
+    position: absolute;
+    top:100%;
+    display: flex;
+    align-self: center;
+    margin-top: 180px;
+    
+    
+
+   
+
+    
+}
+
+iframe{
+
+    border-radius: 5px;
+}
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <header>
+        
+            
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="https://www.instagram.com/accounts/login/?next=/gabrielamencariadv/" target="_blank">sobre</a>
+            <a href="pag03.html">contato</a>
+            <a href="">dúvidas</a>
+    
+    
+        </div><!--menu-->
+    
+    
+    </header>
+    
+
+    <div class="simbolo1">
+
+
+        <img src="SIMBOLO (4).png" alt="photo gabriela" width="80px" height="80px">
+        
+        
+        <div class="logo-rodapé1">
+            <h3>Gabriela Mencari 
+                 
+            
+            
+                <h4>advocacia</h2>
+            
+            </div>
+        
+        
+        
+        </div>
+
+
+<div id="wrapper">
+   <div class="títulotabela"><h6>Dúvidas frequentes</h6>
+
+    <table border=0 id="table_detail" 
+        align=center cellpadding=3>
+
+      
+        <tr onclick="showHideRow('hidden_row1');">
+            <td class="estilo"> <strong> &nbsp;+</strong>Como funciona o regime de separação letigiosa?</td>
+           
+        
+        </tr>
+        <tr id="hidden_row1" class="hidden_row">
+            <td>
+                <p>Person-1 is 24 years old and 
+                he is a computer programmer 
+                he earns 60000 per month 
+                osdjklsadjakljdlkjsdlkjsk
+                asdlkklajsdklajsdkljakdj
+                dflkdsklfkdskfçlsklçsfklçsk
+                sklflsdkflskdfkdsçkf</p>
+            </td>
+        </tr>
+
+        <tr onclick="showHideRow('hidden_row2');">
+            <td class="estilo"><strong> &nbsp;+</strong>Person-2</td>
+           
+        </tr>
+        <tr id="hidden_row2" class="hidden_row">
+            <td>
+                <p> Person-2 is 25 years old and 
+                she is a web designer she earns 
+                100000 per monthekfjkdkfjdklfkd
+                jflkdfjdlskjklsjlskdjfsjdlkfjlk
+                sdfjldsjfsd
+                frkgjkldfjgkfdkgdkfgjkldfjglkdjg
+                kljkdlgjklfdjgkldfjgkfdjgkdgjkdf
+                jgkdfkgjfd</p>
+            </td>
+        </tr>
+
+        <tr onclick="showHideRow('hidden_row3');">
+            <td class="estilo"><strong> &nbsp;+</strong> Person-3 </td>
+            
+        </tr>
+        <tr id="hidden_row3" class="hidden_row">
+            <td>
+               <p>Person is 35 years old and he 
+                is a cyber security expert he 
+                earns 90000 per month</p> 
+            </td>
+        </tr>
+
+        
+        <tr onclick="showHideRow('hidden_row4');">
+            <td class="estilo"><strong> &nbsp;+</strong>Person-4</td>
+          
+        </tr>
+        <tr id="hidden_row4" class="hidden_row">
+            <td>
+               <p> Person-4 is 52 years old and he 
+                is a content writer he earns 
+                200000 per month</p>
+            </td>
+        </tr>
+        
+
+        <tr onclick="showHideRow('hidden_row5');">
+            <td class="estilo"><strong> &nbsp;+</strong>Person-5</td>
+            
+        </tr>
+        <tr id="hidden_row5" class="hidden_row">
+            <td>
+                <p> Person-5 is 38 years old and he 
+                is chief executive he earns 
+                400000 per month</p>
+            </td>
+        </tr>
+
+
+        <tr onclick="showHideRow('hidden_row6');">
+            <td class="estilo"><strong> &nbsp;+</strong>Person-5</td>
+          
+        </tr>
+        <tr id="hidden_row6" class="hidden_row">
+            <td >
+                <p>Person-5 is 38 years old and he 
+                is chief executive he earns 
+                400000 per month</p>
+            </td>
+        </tr>
+
+      
+    </table>
+</div>
+</div>
+</div>
+</div> 
+
+
+
+
+
+
+
+    
+
+
+
+
+<div class="social-media">  
+<div class="bloco" id="q1">
+    <a href="https://www.facebook.com/osorio.mencari" target="_blank"><img src="face (2).png"/></a> </div>
+    <div class="bloco" id="q2"><a href="https://api.whatsapp.com/send/?phone=5521971884417&text&type=phone_number&app_absent=0" target="_blank"><img src="Novo Projeto (3).png"/></a></div>
+    <div class="bloco" id="q3"><a href="https://www.instagram.com/gabrielamencariadv/
+        " target="_blank"><img src="insta.png"/></a></div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
